@@ -14,7 +14,7 @@ export default function NewsBox() {
         setLoading(true)
         const fetchData = async () => {
             const res = await fetch(
-                `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=bce4082fa10f4d75aa44b0a0595c5998`
+                `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=e258af100c3c41d09fffbd1b2632d8d9`
             );
             const data = await res.json();
             setArticles(data.articles);
