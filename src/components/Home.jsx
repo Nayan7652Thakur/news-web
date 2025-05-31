@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-const apiKey = import.meta.env.VITE_NEWS_API;
 
 
 const Home = () => {
@@ -10,7 +9,7 @@ const Home = () => {
   const fetchData = async () => {
     try {
       const res = await fetch(
-        `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`
+        'https://newsapi.org/v2/top-headlines?country=us&apiKey=bce4082fa10f4d75aa44b0a0595c5998'
       );
       const data = await res.json();
 
